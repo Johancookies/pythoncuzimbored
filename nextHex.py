@@ -28,7 +28,8 @@ def nextHex():
             else:
                 print(fail("El numero no es valido"))
 
-    endRun("FIN\n\nPresione una tecla para continuar...")
+    print(msg("\nFIN\n"))
+    endRun()
             
 def changeCharacter(character):
     if character in values:
