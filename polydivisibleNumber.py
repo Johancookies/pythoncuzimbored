@@ -3,7 +3,7 @@ from helpers import *
 def polydivisibleNumber():
     while True:
         clearConsole()
-        print(msg(f"Problema 2 - Números polisivisibles : \n"))
+        print(msg(f"Problema 2 - Números polisivisibles: \n"))
         numbersApproved = 0 # Cuenta la cantidad de divisones posibles para el numero
         number = input(msg("Digite un numero => "))
         if number.isdigit():
@@ -16,13 +16,13 @@ def polydivisibleNumber():
                     if len(str(number)) == 1: # Termina el proceso si solo es de una cifra el numero
                         break
                     else: 
-                        number = int(str(number)[:-1]) # Eetira la ultima cifra del numero
+                        number = int(str(number)[:-1]) # Retira la ultima cifra del numero
                 else: 
                     break
+            print(ok("\nPOLIDIVISIBLE" if numbersApproved == startingLen else fail("\nNO POLIDIVISIBLE"))) 
         else:
             print(fail("Numero invalido"))
-        print(ok("\nPOLIDIVISIBLE" if numbersApproved == startingLen else fail("\nNO POLIDIVISIBLE"))) 
-        input("\n\nPresiona enter para continuar...")
         break
+    endRun()
     
 polydivisibleNumber()
