@@ -1,0 +1,21 @@
+import os
+import platform
+command = "cls" if platform.system() == "Windows" else "clear"
+clear = lambda: os.system(command)
+
+def clearConsole(): #Limpia la consola
+    return clear()
+
+def fail(text):
+    return '\033[91m' + text + '\033[0m'
+
+def ok(text):
+    return '\033[92m' + text + '\033[0m'
+
+def msg(text):
+    return '\033[95m' + text + '\033[0m'
+
+def endRun(text):
+    input(msg(f"\n{text}"))
+
+
