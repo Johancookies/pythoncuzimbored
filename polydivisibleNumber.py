@@ -3,7 +3,7 @@ from helpers import *
 def polydivisibleNumber():
     while True:
         clearConsole()
-        print(msg(f"Ejercicio 6 (Numero polidivisible): \n"))
+        print(msg(f"Problema 2 - Números polisivisibles : \n"))
         numbersApproved = 0 # Cuenta la cantidad de divisones posibles para el numero
         number = input(msg("Digite un numero => "))
         if number.isdigit():
