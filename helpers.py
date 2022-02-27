@@ -15,7 +15,7 @@ def ok(text):
 def msg(text):
     return '\033[95m' + text + '\033[0m'
 
-def endRun(text):
-    input(msg(f"\n{text}"))
+def endRun():
+    input(msg("\nPresione una tecla para continuar..."))
 
 
