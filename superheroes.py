@@ -2,7 +2,6 @@ from helpers import *
 
 def superheroes():
     clearConsole() 
-    getCharacters()
     print(msg("Problema 7 - Transformación de superhéroes\n"))
     data = getCharacters()
     heroes = ["*", "+"]
@@ -18,7 +17,6 @@ def superheroes():
             break
     print(ok("Si") if verifyChange(heroes) else fail("No"))
     endRun()
-
 
 def verifyChange(heroes):
     vocals = ["a", "e", "i", "o", "u"]
