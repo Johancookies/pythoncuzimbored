@@ -18,6 +18,7 @@ def superheroes():
     print(ok("Si") if verifyChange(heroes) else fail("No"))
     endRun()
 
+# Verifica el numero de vocales y consonantes en cada heroe
 def verifyChange(heroes):
     vocals = ["a", "e", "i", "o", "u"]
     counts = []
@@ -33,6 +34,7 @@ def verifyChange(heroes):
         counts.append(consonantsCount)
     return True if counts[0] == counts[2] and counts[1] == counts[3] else False
     
+# Verifica que el nombre cumpla las condiciones
 def verifyName(name, data):
     valid = 0
     for currentCharacter in name:
@@ -40,7 +42,7 @@ def verifyName(name, data):
             valid += 1
     return True if valid == len(name) else False
 
-
+# obtinene valores permitidos para el nombre de los superheroes
 def getCharacters():
     characterCode = 97
     data = []

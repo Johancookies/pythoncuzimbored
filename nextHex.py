@@ -30,12 +30,14 @@ def nextHex():
 
     print(msg("\nFIN\n"))
     endRun()
-            
+
+# Cambia el caracter por el siguiente
 def changeCharacter(character):
     if character in values:
         character = values[values.index(character) + 1]
     return character
 
+# Valida que sea numero hexadecimal valido
 def validateInput(number):
     isValid = True
     for character in number:
